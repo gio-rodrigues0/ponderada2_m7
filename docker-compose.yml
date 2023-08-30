@@ -3,7 +3,7 @@ version: '0.1'
 services:
 
   application:
-    image: giovanna0/modulo7:ponderada2
+    image: giovanna0/ponderada2:backfront
     restart: always
     expose:
       - "5000"
