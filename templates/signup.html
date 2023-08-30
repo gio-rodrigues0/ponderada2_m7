@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de Cadastro</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='/styles.css')}}">
+</head>
+<body>
+    <div class="container">
+        <h2>Tela de Cadastro</h2>
+        <form action="add_user" method="POST">
+            <div class="form-group">
+                <label for="new-username">Novo Usuário:</label>
+                <input type="text" id="new-username" name="user" placeholder="Digite um novo usuário" required>
+            </div>
+            <div class="form-group">
+                <label for="new-password">Nova Senha:</label>
+                <input type="password" id="new-password" name="password" placeholder="Digite uma nova senha" required>
+            </div>
+            <button type="submit" class="btn-register">Cadastrar</button>
+        </form>
+        <p class="text-center"><a href="login" class="btn-back">Voltar</a></p>
+    </div>
+</body>
+</html>

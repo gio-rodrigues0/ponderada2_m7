@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minhas Tarefas</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='/styles.css')}}">
+</head>
+<body>
+    <div class="container">
+        <h2>Minhas Tarefas</h2>
+        
+        {% for task in tasks %}
+        <div class="task-card">
+            <h3>{{task.content}}</h3>
+        </div>
+        {% endfor %}
+
+        <a href="addTodo" class="btn-add-task">Adicionar Tarefa</a>
+        <a href="sign_out" class="btn-sign-out">Sair</a>
+    </div>
+</body>
+</html>

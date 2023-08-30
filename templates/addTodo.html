@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adicionar Tarefa</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='/styles.css')}}">
+</head>
+<body>
+    <div class="container">
+        <h2>Adicionar Tarefa</h2>
+        <form action="add_todo" method="POST">
+            <div class="form-group">
+                <label for="task">Tarefa:</label>
+                <input type="text" id="task" name="task" placeholder="Digite a tarefa" required>
+            </div>
+            <button type="submit" class="btn-save">Salvar</button>
+        </form>
+        <p class="text-center"><a href="todo" class="btn-back">Voltar</a></p>
+    </div>
+</body>
+</html>
