@@ -4,26 +4,27 @@ Uso de Flask como servidor, ele lida de uma forma mais amigável pra renderizar 
 Duas imagens são utilizadas, um criada por meio do Dockerfile que vai possuir tudo relacionado a frontend e backend, enquanto a outra imagem é a oficial do Postgres para que ele seja utilizado com Docker.
 
 ## Pastas
+```
 |
 |- static
     |
     |- styles.css
- |- templates
+|- templates
     |
     |- addTodo.html
     |- login.html
     |- signup.html
     |- todo.html
     |
- |
- |- auth.py
- |- docker-compose.yml
- |- Dockerfile
- |- main.py
- |- models.py
- |- requirements.txt
 |
-
+|- auth.py
+|- docker-compose.yml
+|- Dockerfile
+|- main.py
+|- models.py
+|- requirements.txt
+|
+```
 
 ## Como rodar
 
